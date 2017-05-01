@@ -1570,7 +1570,7 @@ IF m.llHasChanges
 		*-- result of changes to code or table structures.
 		SELECT ( m.lcChangesAlias )
 		IF m.llCleanupModified ;
-				AND INLIST( m.lcMainExtension, "VCX", "SCX", "FRX", "DBC" ) ;
+				AND INLIST( m.lcMainExtension, "VCX", "SCX", "FRX", "DBC", "LBX", "MNX" ) ;
 				AND ( GS_WorkTreeStatus = "M" ;
 					OR GS_IndexStatus = "M" )
 			INSERT INTO ( m.lcCleanupAlias ) ;
